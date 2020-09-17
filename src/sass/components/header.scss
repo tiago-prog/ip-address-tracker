@@ -1,0 +1,22 @@
+.header__bg {
+  width: 100vw;
+  height: 220px;
+  background-image: url(../images/pattern-bg.png);
+  background-position: 50%;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 25vh;
+  
+  h1 {
+    margin-bottom: 25px;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+}

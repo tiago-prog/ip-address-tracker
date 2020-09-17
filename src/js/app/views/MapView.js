@@ -10,10 +10,10 @@ class MapView {
 
   _template(map) {
     return `  
-    <div>${map.ip}</div>
-    <div>${map.location}</div>
-    <div>${map.timezone}</div>
-    <div>${map.isp}</div>
+    <div><span>Ip</span>${map.ip}</div>
+    <div><span>Location</span>${map.location}</div>
+    <div><span>Timezone</span>${map.timezone}</div>
+    <div><span>Isp</span>${map.isp}</div>
     `
   }
 

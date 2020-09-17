@@ -1,0 +1,26 @@
+.search {
+  display: flex;
+  margin-bottom: 50px;
+  input {
+    width: 250px;
+    min-width: 10px;
+    border: none;
+    padding: 10px 30px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+
+    font-size: 15px;
+    @media (min-width: 550px) {
+      width: 350px;
+  }
+  }
+
+  button {
+    width: 45px;
+    border: none;
+    margin: 0;
+    background: #000;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+}

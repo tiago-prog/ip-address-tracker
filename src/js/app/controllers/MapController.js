@@ -5,7 +5,7 @@ class MapController {
     this._elementDetails = $('#details');
     this._map = L.map('map', { center: [37.4223, -122.085], zoom: 13 });
     this._myIcon = L.icon({
-      iconUrl: '../src/images/icon-location.svg',
+      iconUrl: './images/icon-location.svg',
       iconSize: [46, 56],
       iconAnchor: [23, 0],
     });
@@ -19,7 +19,7 @@ class MapController {
       accessToken: 'pk.eyJ1IjoidGlhZ29jb3JyZWFuZXZlcyIsImEiOiJja2VobHVleXUwczA5MnRsZmg2bnYzeGpzIn0.nGq8d5ow8Nj1SvmmE9T5MQ'
     }).addTo(this._map);
     let initialLocation = L.marker([37.4223, -122.085], { icon: this._myIcon }).addTo(this._map);
-    initialLocation.bindPopup(`This is the initial location try to search for an IP`);
+    initialLocation.bindPopup(`This is the initial location try to search for an IP or domain`);
 
     this._mapView = new MapView(this._elementDetails);
     this._mapView.update(this._createMap('8.8.8.8', 'Mountain View, US 94043', '-07:00', 'Google LLC'));
@@ -29,7 +29,7 @@ class MapController {
     if (!MapHelper.validIp(this._inputIp.value)) return;
     let address = await this._searchAddress(this._inputIp.value);
 
-
+    // future funcionality (Message Error and Success)
     if (address.code) { console.log('IP inválido!') }
 
     this._mapView.update(this._createMap(

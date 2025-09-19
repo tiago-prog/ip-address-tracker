@@ -27,7 +27,7 @@ Veja os dados detalhados na área de informações e a localização marcada no 
 
 Novas buscas atualizam automaticamente o mapa e os dados.
 
-### Tecnologias Utilizadas
+## Tecnologias Utilizadas
 ### JavaScript (ES6+)
 
 ### Leaflet.js
@@ -70,3 +70,4 @@ New searches update the data and map automatically.
 ### Leaflet.js
 
 ### CSS3/SASS
+
